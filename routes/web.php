@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get ('/testing',function($value=''){
 	return 'This is a testing page!';
 });
+
+Route::get ('/test',function($value=''){
+	return 'This is a test page!';
+});
+
