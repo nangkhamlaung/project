@@ -8,6 +8,6 @@ class BackendTemplateController extends Controller
 {
     public function dashboardfun($value='')
    {
-   return view('backend.dashboard');
+   return view('backend/dashboard');
    }
 }
