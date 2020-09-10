@@ -26,4 +26,6 @@ Route::get ('/test',function($value=''){
 	return 'This is a test page!';
 });
 
+Route::resource('titles','TitleController');
+
 
