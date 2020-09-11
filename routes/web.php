@@ -13,17 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');   
-});
-Route::get ('/testing',function($value=''){
-	return 'This is a testing page!';
-});
+// Route::get('/', function () {
+//     return view('welcome');   
+// });
+// Route::get ('/testing',function($value=''){
+// 	return 'This is a testing page!';
+// });
 
-Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboardpage');
+Route::get('/','PageController@mainfun')->name('mainpage'); //nang haung nwan
 
-Route::get ('/test',function($value=''){
-	return 'This is a test page!';
-});
+Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboardpage'); 
+
+// Route::get ('/test',function($value=''){
+// 	return 'This is a test page!';
+// });
 
 
