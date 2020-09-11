@@ -54,7 +54,7 @@
             <div class="row align-items-sm-center align-items-lg-stretch">
                 <div class="col-md-7 col-lg-7">
                     <div class="learning_img">
-                        <img src="img/learning_img.png" alt="">
+                        <img src="{{ asset('frontend/img/learning_img.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-5">
@@ -126,7 +126,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_1.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_1.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">Web Development</a>
                             <h4>$130.00</h4>
@@ -134,7 +134,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_1.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_1.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -142,11 +142,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_2.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_2.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">design</a>
                             <h4>$160.00</h4>
@@ -165,7 +165,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_2.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_2.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -173,11 +173,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_3.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_3.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">Wordpress</a>
                             <h4>$140.00</h4>
@@ -196,7 +196,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_3.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_3.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -204,11 +204,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -254,7 +254,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="learning_img">
-                        <img src="img/advance_feature_img.png" alt="">
+                        <img src="{{ asset('frontend/img/advance_feature_img.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -303,7 +303,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +321,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_2.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_2.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -335,7 +335,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_3.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_3.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -367,7 +367,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_1.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_1.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Design</a>
                                 <a href="blog.html">
@@ -413,7 +413,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_2.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Developing</a>
                                 <a href="blog.html">
@@ -431,7 +431,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_3.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Design</a>
                                 <a href="blog.html">
