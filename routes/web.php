@@ -28,6 +28,11 @@ Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboar
 // 	return 'This is a test page!';
 // });
 
+
+
+
+//Nang Kham Laung
+Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
 
 

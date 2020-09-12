@@ -14,8 +14,11 @@ class TitleController extends Controller
      */
     public function index()
     {
-        return view('backend.titles.index');
+
        
+         //$titles=Title::All();
+        return view('backend.titles.index');
+
     }
 
     /**
@@ -25,7 +28,11 @@ class TitleController extends Controller
      */
     public function create()
     {
-        return view('backend.titles.create');
+
+       
+
+       return view('backend.titles.create');
+
     }
 
     /**
@@ -36,15 +43,23 @@ class TitleController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            "name" => 'required',
-          
-        ]);
 
-        //if include file,upload file
+        
+        $request->validate([
+        
+        "name"=>'required'
+        
+         //inputname
+        ]);
+        $title=new Title();
+        //$item->colname=$request->inputname
+        
+        $title->name = $request->name;
        
         
-       
+
+        $title ->save();
+
         //redirect
         return redirect()->route('titles.index');
     }
@@ -68,7 +83,11 @@ class TitleController extends Controller
      */
     public function edit(Title $title)
     {
-        return view('backend.titles.edit',compact('title'));
+
+        
+        $titles=Title::all();
+        return view('backend.titles.edit',compact('titles','title'));
+
     }
 
     /**
@@ -81,6 +100,7 @@ class TitleController extends Controller
     public function update(Request $request, Title $title)
     {
         $request->validate([
+
             "name" => 'required',
             
         ]);
@@ -93,7 +113,9 @@ class TitleController extends Controller
 
         //redirect
         return redirect()->route('titles.index');
-    }
+
+        
+     }
 
     /**
      * Remove the specified resource from storage.
@@ -103,7 +125,9 @@ class TitleController extends Controller
      */
     public function destroy(Title $title)
     {
+
        $title->delete();
-        return redirect()->route('titles.index');  
+        return redirect()->route('titles.index');
     }
+
 }

@@ -54,23 +54,20 @@
             <div class="row align-items-sm-center align-items-lg-stretch">
                 <div class="col-md-7 col-lg-7">
                     <div class="learning_img">
-                        <img src="img/learning_img.png" alt="">
+                        <img src="{{ asset('frontend/img/learning_img.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-5">
                     <div class="learning_member_text">
                         <h5>About us</h5>
-                        <h2>Learning with Love
-                            and Laughter</h2>
-                        <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast
-                            greater grass signs abundantly have greater also
-                            days years under brought moveth.</p>
-                        <ul>
+                        <h2>Making Quiz Purpose </h2>
+                        <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
+                        {{-- <ul>
                             <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
                                 gathered wear</li>
                             <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
                                 night.</li>
-                        </ul>
+                        </ul> --}}
                         <a href="#" class="btn_1">Read More</a>
                     </div>
                 </div>
@@ -80,7 +77,7 @@
     <!-- learning part end-->
 
     <!-- member_counter counter start -->
-    <section class="member_counter">
+    {{-- <section class="member_counter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
@@ -109,11 +106,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- member_counter counter end -->
 
     <!--::review_part start::-->
-    <section class="special_cource padding_top">
+    {{-- <section class="special_cource padding_top">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5">
@@ -126,7 +123,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_1.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_1.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">Web Development</a>
                             <h4>$130.00</h4>
@@ -134,7 +131,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_1.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_1.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -142,11 +139,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -157,7 +154,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_2.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_2.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">design</a>
                             <h4>$160.00</h4>
@@ -165,7 +162,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_2.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_2.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -173,11 +170,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -188,7 +185,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="single_special_cource">
-                        <img src="img/special_cource_3.png" class="special_img" alt="">
+                        <img src="{{ asset('frontend/img/special_cource_3.png')}}" class="special_img" alt="">
                         <div class="special_cource_text">
                             <a href="course-details.html" class="btn_4">Wordpress</a>
                             <h4>$140.00</h4>
@@ -196,7 +193,7 @@
                             <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
                             <div class="author_info">
                                 <div class="author_img">
-                                    <img src="img/author/author_3.png" alt="">
+                                    <img src="{{ asset('frontend/img/author/author_3.png')}}" alt="">
                                     <div class="author_info_text">
                                         <p>Conduct by:</p>
                                         <h5><a href="#">James Well</a></h5>
@@ -204,11 +201,11 @@
                                 </div>
                                 <div class="author_rating">
                                     <div class="rating">
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/color_star.svg" alt=""></a>
-                                        <a href="#"><img src="img/icon/star.svg" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
+                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
                                     </div>
                                     <p>3.8 Ratings</p>
                                 </div>
@@ -219,7 +216,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--::blog_part end::-->
 
     <!-- learning part start-->
@@ -228,13 +225,14 @@
             <div class="row align-items-sm-center align-items-xl-stretch">
                 <div class="col-md-6 col-lg-6">
                     <div class="learning_member_text">
-                        <h5>Advance feature</h5>
-                        <h2>Our Advance Educator
-                            Learning System</h2>
-                        <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days
-                            and beast greater grass signs abundantly have greater also use over face earth
-                            days years under brought moveth she star</p>
-                        <div class="row">
+                       {{--  <h5>Advance feature</h5> --}}
+                        <h2>Advantage of IT Quiz</h2>
+                        <p>Quizzes can be given without an instructor. Since the quiz is virtual, employees can take them on their own time without the need of someone acting as a proctor. We can also check our own skill everytime we needs.</p>
+
+
+                        <h2>Disadvantage of IT Quiz</h2>
+                        <p>IT Quiz system is need to access the Internet first we used. So it is difficult for someone who hasn't had the Internet access.</p>
+                       {{--  <div class="row">
                             <div class="col-sm-6 col-md-12 col-lg-6">
                                 <div class="learning_member_text_iner">
                                     <span class="ti-pencil-alt"></span>
@@ -249,12 +247,12 @@
                                     <p>There earth face earth behold she star so made void two given and also our</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="learning_img">
-                        <img src="img/advance_feature_img.png" alt="">
+                        <img src="{{ asset('frontend/img/advance_feature_img.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -289,7 +287,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -303,7 +301,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +319,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_2.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_2.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -335,7 +333,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +351,7 @@
                                 </div>
                                 <div class="col-lg-4 col-xl-2 col-sm-4">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_3.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_3.png')}}" alt="#">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-none d-xl-block">
@@ -367,7 +365,7 @@
                                 </div>
                                 <div class="col-xl-2 d-none d-xl-block">
                                     <div class="testimonial_slider_img">
-                                        <img src="img/testimonial_img_1.png" alt="#">
+                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +393,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_1.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_1.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Design</a>
                                 <a href="blog.html">
@@ -413,7 +411,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_2.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_2.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Developing</a>
                                 <a href="blog.html">
@@ -431,7 +429,7 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="img/blog/blog_3.png" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/blog_3.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
                                 <a href="#" class="btn_4">Design</a>
                                 <a href="blog.html">
