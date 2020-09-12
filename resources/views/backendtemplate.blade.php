@@ -151,13 +151,20 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Charts</span></a>
       </li>
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('titles.index')}}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Title</span></a>
+      </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="{{route('questions.index')}}">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Question</span></a>
       </li>
+      
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
