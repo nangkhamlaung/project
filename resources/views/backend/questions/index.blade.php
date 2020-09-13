@@ -30,7 +30,7 @@
 								
 								<th scope="col">Title</th>
 								
-								<th scope="col">Actions</th>
+								<th scope="col" style="width: 200px;">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -52,9 +52,7 @@
 									
 								
 								
-									<a href="" class="btn btn-info">
-										<i class="fas fa-info"></i>
-									</a>
+
 
 									<a href="{{route('questions.edit',$question->id)}}" class="btn btn-warning"><i class="fas fa-edit"></i>
 									</a>
