@@ -27,9 +27,17 @@ Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboar
 // Route::get ('/test',function($value=''){
 // 	return 'This is a test page!';
 // });
+
+
+
+
 //Nang Kham Laung
 Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
 
+<<<<<<< HEAD
 //Honeyzue
 Route::resource('answers','AnswerController');
+=======
+
+>>>>>>> 959033224f0421b03040bbae5c85d176b5cd7579

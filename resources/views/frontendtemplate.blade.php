@@ -32,7 +32,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo.png')}}" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo1.png')}}" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -86,11 +86,8 @@
                     <div class="banner_text">
                         <div class="banner_text_iner">
                             <h5>Every child yearns to learn</h5>
-                            <h1>Making Your Childs
-                                World Better</h1>
-                            <p>Replenish seasons may male hath fruit beast were seas saw you arrie said man beast whales
-                                his void unto last session for bite. Set have great you'll male grass yielding yielding
-                                man</p>
+                            <h1>Show Your Ability</h1>
+                            <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
                             <a href="#" class="btn_1">View Course </a>
                             <a href="#" class="btn_2">Get Started </a>
                         </div>
@@ -110,7 +107,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="{{ asset('frontend/img/logo.png')}}" alt=""> </a>
+                        <a href="index.html"> <img src="{{ asset('frontend/img/logo2.png')}}" alt=""> </a>
                         <p>But when shot real her. Chamber her one visite removal six
                             sending himself boys scot exquisite existend an </p>
                         <p>But when shot real her hamber her </p>

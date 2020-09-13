@@ -13,21 +13,20 @@
 				</form>
 		</div>
 	</div>
+
 	
-	
+
 	
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 
-					
 					<table class="table table-bordered ">
 						<thead class="table-dark">
 							<tr>
 								<th scope="col">No</th>
-								
 								<th scope="col">Name</th>
-								
+
 								
 								<th scope="col">Actions</th>
 							</tr>
@@ -39,19 +38,20 @@
 							@foreach ($titles as $title)
 							<tr>
 								<td>{{$i++}}</td>
-								
 								<td>{{$title->name}}</td>
-								
 								<td>
 									<form method="POST" action="{{route('titles.destroy',$title->id)}}" onsubmit="return confirm('Are you sure?')">
 									@csrf
 									@method('DELETE')
 
-									
-								
-								
+
 									
 
+								
+
+								
+
+									
 									<a href="{{route('titles.edit',$title->id)}}" class="btn btn-warning"><i class="fas fa-edit"></i>
 									</a>
 									<button class="btn btn-danger">
@@ -63,10 +63,8 @@
 							@endforeach 
 						</tbody>
 					</table>
-				
 			</div>
 		</div>
-
 	</div>
 </div>
 @endsection
