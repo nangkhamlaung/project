@@ -8,7 +8,8 @@ class PageController extends Controller
 {
     public function mainfun($value='')
      {
-
-     	return view('frontend.main');
+     	
+     	return view('frontend.main',compact('questions'));
      }
+     
 }

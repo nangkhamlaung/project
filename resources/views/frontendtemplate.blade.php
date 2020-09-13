@@ -59,7 +59,7 @@
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        <a class="dropdown-item" href="#">Single blog</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
                                     </div>
                                 </li>
