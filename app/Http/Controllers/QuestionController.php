@@ -89,7 +89,7 @@ class QuestionController extends Controller
        $request->validate([
         
         "name"=>'required']);
-//data update
+        //data update
         
         $question->name = $request->name;
         

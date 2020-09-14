@@ -164,10 +164,15 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Question</span></a>
       </li>
-            <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="{{route('answers.index')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Answer</span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="{{route('knowledges.index')}}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Knowledge</span></a>
       </li>
       
 

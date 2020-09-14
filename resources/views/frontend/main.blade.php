@@ -232,22 +232,7 @@
 
                         <h2>Disadvantage of IT Quiz</h2>
                         <p>IT Quiz system is need to access the Internet first we used. So it is difficult for someone who hasn't had the Internet access.</p>
-                       {{--  <div class="row">
-                            <div class="col-sm-6 col-md-12 col-lg-6">
-                                <div class="learning_member_text_iner">
-                                    <span class="ti-pencil-alt"></span>
-                                    <h4>Learn Anywhere</h4>
-                                    <p>There earth face earth behold she star so made void two given and also our</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-12 col-lg-6">
-                                <div class="learning_member_text_iner">
-                                    <span class="ti-stamp"></span>
-                                    <h4>Expert Teacher</h4>
-                                    <p>There earth face earth behold she star so made void two given and also our</p>
-                                </div>
-                            </div>
-                        </div> --}}
+                       
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -260,132 +245,14 @@
     </section>
     <!-- learning part end-->
 
-    <!--::review_part start::-->
-    <section class="testimonial_part">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-xl-5">
-                    <div class="section_tittle text-center">
-                        <p>tesimonials</p>
-                        <h2>Happy Students</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="textimonial_iner owl-carousel">
-                        <div class="testimonial_slider">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-2 col-sm-4">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 d-none d-xl-block">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 d-none d-xl-block">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial_slider">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-2 col-sm-4">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_2.png')}}" alt="#">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 d-none d-xl-block">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 d-none d-xl-block">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial_slider">
-                            <div class="row">
-                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-xl-2 col-sm-4">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_3.png')}}" alt="#">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 d-none d-xl-block">
-                                    <div class="testimonial_slider_text">
-                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                            hath herb divided divide creepeth living shall i call beginning
-                                            third sea itself set</p>
-                                        <h4>Michel Hashale</h4>
-                                        <h5> Sr. Web designer</h5>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2 d-none d-xl-block">
-                                    <div class="testimonial_slider_img">
-                                        <img src="{{ asset('frontend/img/testimonial_img_1.png')}}" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!--::blog_part end::-->
-
     <!--::blog_part start::-->
     <section class="blog_part section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5">
                     <div class="section_tittle text-center">
-                        <p>Our Blog</p>
-                        <h2>Students Blog</h2>
+                        {{-- <p>Our Blog</p> --}}
+                        <h2>Knowledges</h2>
                     </div>
                 </div>
             </div>
@@ -393,13 +260,13 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="{{ asset('frontend/img/blog/blog_1.png')}}" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/html.png')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="#" class="btn_4">Design</a>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Dry beginning sea over tree</h5>
-                                </a>
-                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is HTML?</h5>
+                                <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+                                <a href="https://www.w3schools.com/html" class="text-info">Learn more</a>
                                 <ul>
                                     <li> <span class="ti-comments"></span>2 Comments</li>
                                     <li> <span class="ti-heart"></span>2k Like</li>
@@ -411,13 +278,13 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="{{ asset('frontend/img/blog/blog_2.png')}}" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/css.jpg')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="#" class="btn_4">Developing</a>
-                                <a href="blog.html">
-                                    <h5 class="card-title">All beginning air two likeness</h5>
-                                </a>
-                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is CSS?</h5>
+                                <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files</p>
+                                <a href="https://www.w3schools.com/css" class="text-info">Learn more</a>
                                 <ul>
                                     <li> <span class="ti-comments"></span>2 Comments</li>
                                     <li> <span class="ti-heart"></span>2k Like</li>
@@ -429,13 +296,70 @@
                 <div class="col-sm-6 col-lg-4 col-xl-4">
                     <div class="single-home-blog">
                         <div class="card">
-                            <img src="{{ asset('frontend/img/blog/blog_3.png')}}" class="card-img-top" alt="blog">
+                            <img src="{{ asset('frontend/img/blog/js.jpg')}}" class="card-img-top" alt="blog">
                             <div class="card-body">
-                                <a href="#" class="btn_4">Design</a>
-                                <a href="blog.html">
-                                    <h5 class="card-title">Form day seasons sea hand</h5>
-                                </a>
-                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is JavaScript?</h5>
+                                <p>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.</p>
+                                <a href="https://www.w3schools.com/js" class="text-info">Learn more</a>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="{{ asset('frontend/img/blog/php.jpg')}}" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is PHP?</h5>
+                                <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+                                <a href="https://www.w3schools.com/php" class="text-info">Learn more</a>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="{{ asset('frontend/img/blog/jq.png')}}" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is jQuery?</h5>
+                                <p>jQuery is a lightweight, "write less, do more", JavaScript library.The purpose of jQuery is to make it much easier to use JavaScript on your website.jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+                                <a href="https://www.w3schools.com/jquery" class="text-info">Learn more</a>
+                                <ul>
+                                    <li> <span class="ti-comments"></span>2 Comments</li>
+                                    <li> <span class="ti-heart"></span>2k Like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="{{ asset('frontend/img/blog/sql.png')}}" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                {{-- <a href="#" class="btn_4">Design</a> --}}
+                                
+                                <h5 class="card-title">What is SQL?</h5>
+                                <p>SQL stands for Structured Query Language. SQL lets you access and manipulate databases. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987</p>
+                                <a href="https://www.w3schools.com/sql" class="text-info">Learn more</a>
                                 <ul>
                                     <li> <span class="ti-comments"></span>2 Comments</li>
                                     <li> <span class="ti-heart"></span>2k Like</li>
