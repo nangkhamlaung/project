@@ -35,10 +35,15 @@ Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboar
 Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
 
+
 //Honey Zue
 Route::resource('answers','AnswerController');
 
+//Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
+
+
+
 
 
 
