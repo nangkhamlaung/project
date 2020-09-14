@@ -24,11 +24,7 @@
 							<tr>
 								<th scope="col">No</th>
 								
-								{{-- <th scope="col-md-3">Answer1</th>
-								<th scope="col-md-3">Answer2</th>
-
-								<th scope="col-md-3">Answer3</th>
-								<th scope="col-md-3">Answer4</th> --}}
+								
 
 								
 								<th scope=" col">Right Answer</th>
@@ -45,10 +41,7 @@
 							<tr>
 								<td>{{$i++}}</td>
 								
-								{{-- <td>{{$answer->answer1}}</td>
-								<td>{{$answer->answer2}}</td>
-								<td>{{$answer->answer3}}</td>
-								<td>{{$answer->answer4}}</td> --}}
+								
 								<td>{{$answer->right_answer}}</td>
 								<td>{{$answer->question->name}}</td>
 								

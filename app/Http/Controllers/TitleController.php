@@ -47,14 +47,22 @@ class TitleController extends Controller
         
         $request->validate([
         
-        "name"=>'required'
+        "name"=>'required',
+        "photo"=>'required'
         
          //inputname
         ]);
+                $imageName = time().'.'.$request->photo->extension();
+
+        $request->photo->move(public_path('backend/titleimg'),$imageName);
+
+        $path = 'backend/titleimg/'.$imageName;
         $title=new Title();
         //$item->colname=$request->inputname
         
         $title->name = $request->name;
+        $title->photo = $path;
+
        
         
 
@@ -102,14 +110,27 @@ class TitleController extends Controller
         $request->validate([
 
             "name" => 'required',
+            "photo" => 'required',
+
             
         ]);
+        if($request->hasFile('photo')){
+        $imageName = time().'.'.$request->photo->extension();
+
+        $request->photo->move(public_path('backend/titleimg'),$imageName);
+
+        $path = 'backend/titleimg/'.$imageName;
+        }else{
+            $path=$request->oldphoto;
+        }
 
         
         
         $title->name=$request->name;
+        $title->photo=$path;
+
         
-        
+        $title->save();
 
         //redirect
         return redirect()->route('titles.index');

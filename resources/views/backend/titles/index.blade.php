@@ -26,6 +26,7 @@
 							<tr>
 								<th scope="col">No</th>
 								<th scope="col">Name</th>
+								<th scope="col">Photo</th>
 
 								
 								<th scope="col">Actions</th>
@@ -39,6 +40,8 @@
 							<tr>
 								<td>{{$i++}}</td>
 								<td>{{$title->name}}</td>
+								<td><img src="{{$title->photo}}" class="rounded circle" width="150px" height="120px"></td>
+
 								<td>
 									<form method="POST" action="{{route('titles.destroy',$title->id)}}" onsubmit="return confirm('Are you sure?')">
 									@csrf
