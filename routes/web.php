@@ -35,9 +35,9 @@ Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboar
 Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
 
-<<<<<<< HEAD
+
 //Honeyzue
 Route::resource('answers','AnswerController');
-=======
+Route::resource('knowledges','KnowledgeController');
 
->>>>>>> 959033224f0421b03040bbae5c85d176b5cd7579
+

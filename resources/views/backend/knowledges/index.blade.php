@@ -6,9 +6,9 @@
 		<h1 class="h3 mb-0 text-gray-800">Title List</h1>
 		<div class="row">
 			<div class="col-md-12">
-		<a href="{{route('titles.create')}}" class="btn btn-info" >Add New</a>
+		<a href="{{route('knowledges.create')}}" class="btn btn-info" >Add New</a>
 			</div>
-			<form action="{{route('titles.store')}}" method="POST" enctype="multipart/form-data">
+			<form action="{{route('knowledges.store')}}" method="POST" enctype="multipart/form-data">
 					@csrf
 				</form>
 		</div>
@@ -27,16 +27,18 @@
 								<th scope="col">No</th>
 								<th scope="col">Name</th>
 								<th scope="col">Photo</th>
+								<th scope="col">Description</th>
+
 
 								
 								<th scope="col">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
-							@php 
+							{{-- @php 
 							$i=1;
 							@endphp
-							@foreach ($titles as $title)
+							@foreach ($knowledges as $knowledge)
 							<tr>
 								<td>{{$i++}}</td>
 								<td>{{$title->name}}</td>
@@ -63,7 +65,7 @@
 								</form>
 							</td>
 							</tr>
-							@endforeach 
+							@endforeach  --}}
 						</tbody>
 					</table>
 			</div>
