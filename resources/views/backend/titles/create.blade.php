@@ -8,10 +8,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-
 				<form action="{{route('titles.store')}}" method="POST" enctype="multipart/form-data">
 					@csrf
-					
+
 					
 					<div class="form-group row">
 						<label for="name" class="col-sm-2 col-form-label">Title Name</label>
@@ -20,23 +19,23 @@
 							<span class="text-danger">{{$errors->first('name')}}</span>
 						</div>
 					</div>
+
 					
+
 					
+
 					
-					
+
 					
 					<div class="form-group row">
-
 						<div class="col-sm-10">
 							<input type="submit" name="btnsubmit" value="Create" class="btn btn-success" >
 						</div>
 					</div>
 
-
 				</form>
 			</div>
 		</div>
-
 	</div>
 </div>
 @endsection

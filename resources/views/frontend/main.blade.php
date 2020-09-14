@@ -1,6 +1,25 @@
 @extends('frontendtemplate')
 @section('content')
+<!-- banner part start-->
 
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Every child yearns to learn</h5>
+                            <h1>Show Your Ability</h1>
+                            <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
+                            <a href="#" class="btn_1">View Course </a>
+                            <a href="#" class="btn_2">Get Started </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
 <!-- feature_part start-->
 <section class="feature_part">
         <div class="container">
@@ -60,17 +79,14 @@
                 <div class="col-md-5 col-lg-5">
                     <div class="learning_member_text">
                         <h5>About us</h5>
-                        <h2>Learning with Love
-                            and Laughter</h2>
-                        <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast
-                            greater grass signs abundantly have greater also
-                            days years under brought moveth.</p>
-                        <ul>
+                        <h2>Making Quiz Purpose </h2>
+                        <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
+                        {{-- <ul>
                             <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
                                 gathered wear</li>
                             <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
                                 night.</li>
-                        </ul>
+                        </ul> --}}
                         <a href="#" class="btn_1">Read More</a>
                     </div>
                 </div>
@@ -80,7 +96,7 @@
     <!-- learning part end-->
 
     <!-- member_counter counter start -->
-    <section class="member_counter">
+    {{-- <section class="member_counter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
@@ -109,11 +125,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- member_counter counter end -->
 
     <!--::review_part start::-->
-    <section class="special_cource padding_top">
+    {{-- <section class="special_cource padding_top">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5">
@@ -219,7 +235,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--::blog_part end::-->
 
     <!-- learning part start-->
@@ -228,13 +244,14 @@
             <div class="row align-items-sm-center align-items-xl-stretch">
                 <div class="col-md-6 col-lg-6">
                     <div class="learning_member_text">
-                        <h5>Advance feature</h5>
-                        <h2>Our Advance Educator
-                            Learning System</h2>
-                        <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days
-                            and beast greater grass signs abundantly have greater also use over face earth
-                            days years under brought moveth she star</p>
-                        <div class="row">
+                       {{--  <h5>Advance feature</h5> --}}
+                        <h2>Advantage of IT Quiz</h2>
+                        <p>Quizzes can be given without an instructor. Since the quiz is virtual, employees can take them on their own time without the need of someone acting as a proctor. We can also check our own skill everytime we needs.</p>
+
+
+                        <h2>Disadvantage of IT Quiz</h2>
+                        <p>IT Quiz system is need to access the Internet first we used. So it is difficult for someone who hasn't had the Internet access.</p>
+                       {{--  <div class="row">
                             <div class="col-sm-6 col-md-12 col-lg-6">
                                 <div class="learning_member_text_iner">
                                     <span class="ti-pencil-alt"></span>
@@ -249,7 +266,7 @@
                                     <p>There earth face earth behold she star so made void two given and also our</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">

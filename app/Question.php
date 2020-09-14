@@ -14,5 +14,15 @@ class Question extends Model
     {
     	return $this->belongsTo('App\Title');
     }
+      public function answers($value='')
+     {
+    	return $this->hasMany('App\Answer');
+    }
+
 }
+
+
+
+
+
 

@@ -14,8 +14,11 @@ class TitleController extends Controller
      */
     public function index()
     {
+
+       
          //$titles=Title::All();
         return view('backend.titles.index');
+
     }
 
     /**
@@ -25,7 +28,11 @@ class TitleController extends Controller
      */
     public function create()
     {
+
+       
+
        return view('backend.titles.create');
+
     }
 
     /**
@@ -36,8 +43,8 @@ class TitleController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
-        //Validation
+
+        
         $request->validate([
         
         "name"=>'required'
@@ -52,6 +59,7 @@ class TitleController extends Controller
         
 
         $title ->save();
+
         //redirect
         return redirect()->route('titles.index');
     }
@@ -75,8 +83,11 @@ class TitleController extends Controller
      */
     public function edit(Title $title)
     {
+
+        
         $titles=Title::all();
         return view('backend.titles.edit',compact('titles','title'));
+
     }
 
     /**
@@ -89,17 +100,22 @@ class TitleController extends Controller
     public function update(Request $request, Title $title)
     {
         $request->validate([
-        
-        "name"=>'required']);
-        
-        
-        $title->name = $request->name;
-       
 
-        $title ->save();
+            "name" => 'required',
+            
+        ]);
+
+        
+        
+        $title->name=$request->name;
+        
+        
+
         //redirect
-             return redirect()->route('titles.index');
-    }
+        return redirect()->route('titles.index');
+
+        
+     }
 
     /**
      * Remove the specified resource from storage.
@@ -109,7 +125,9 @@ class TitleController extends Controller
      */
     public function destroy(Title $title)
     {
-        $title->delete();
+
+       $title->delete();
         return redirect()->route('titles.index');
     }
- }
+
+}

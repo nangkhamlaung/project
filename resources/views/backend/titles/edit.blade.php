@@ -8,11 +8,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-
 				<form action="{{route('titles.update',$title->id)}}" method="POST" enctype="multipart/form-data">
 					@csrf
 					@method('PUT')
-					
 					<div class="form-group row">
 						<label for="name" class="col-sm-2 col-form-label">Name</label>
 						<div class="col-sm-6">
@@ -20,25 +18,27 @@
 							<span class="text-danger">{{$errors->first('name')}}</span>
 						</div>
 					</div>
+
 					
+
 					
+
 					
+
 					
+
 					
-					
+
 					
 					<div class="form-group row">
-
 						<div class="col-sm-10">
 							<input type="submit" name="btnsubmit" value="Update" class="btn btn-success" >
 						</div>
 					</div>
 
-
 				</form>
 			</div>
 		</div>
-
 	</div>
 </div>
 @endsection
