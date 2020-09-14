@@ -74,7 +74,7 @@ class AnswerController extends Controller
     public function show(Answer $answer)
     {
          $answers=Answer::All();
-        return view('backend.answers.show',compact('answers'));
+        return view('backend.answers.show',compact('answers','answer'));
     }
 
     /**

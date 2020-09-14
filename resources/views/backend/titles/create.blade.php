@@ -19,6 +19,7 @@
 							<span class="text-danger">{{$errors->first('name')}}</span>
 						</div>
 					</div>
+					
 
 					
 

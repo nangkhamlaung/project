@@ -49,11 +49,7 @@
 									@csrf
 									@method('DELETE')
 
-									
-								
-								
-
-
+							
 									<a href="{{route('questions.edit',$question->id)}}" class="btn btn-warning"><i class="fas fa-edit"></i>
 									</a>
 									<button class="btn btn-danger">

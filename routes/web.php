@@ -42,9 +42,24 @@ Route::get('title','PageController@titlefun')->name('titlepage');
 
 
 
+
 //Honeyzue
 Route::resource('answers','AnswerController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//Honey Zue
+Route::resource('answers','AnswerController');
+
+//Nang Haung nwan
+Route::resource('knowledges','KnowledgeController');
+
+
+
+
+
+
+
