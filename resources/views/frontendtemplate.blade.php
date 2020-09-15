@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -183,6 +181,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{ asset('frontend/js/slick.min.js')}}"></script>
     <script src="{{ asset('frontend/js/jquery.counterup.min.js')}}"></script>
     <script src="{{ asset('frontend/js/waypoints.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('front/js/js_script.js')}}"></script>
     <!-- custom js -->
     <script src="{{ asset('frontend/js/custom.js')}}"></script>
 </body>
