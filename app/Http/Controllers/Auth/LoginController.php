@@ -1,10 +1,14 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use APP\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
+
 
 class LoginController extends Controller
 {
@@ -36,5 +40,17 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+     protected function authenticated(Request $request, $user)
+    {
+        $roles = $user->getRoleNames();
+        switch($roles[0]){
+            case "Admin":
+                return redirect('dashboard');
+                break;
+            case "Customer":
+                return redirect('/');
+                break;
+        }
     }
 }

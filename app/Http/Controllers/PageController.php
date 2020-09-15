@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Knowledge;
 
-
 use App\Title;
 use App\Question;
 use App\Answer;
@@ -14,10 +13,17 @@ class PageController extends Controller
     public function mainfun($value='')
      {
 
+
      	$knowledges=Knowledge::all();
      	return view('frontend.main',compact('knowledges'));
 
      	
+
+ 
+     	$knowledges=Knowledge::all();
+     	return view('frontend.main',compact('knowledges'));
+
+
      	return view('frontend.main');
 
      }
