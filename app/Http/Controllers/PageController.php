@@ -17,6 +17,7 @@ class PageController extends Controller
      	$knowledges=Knowledge::all();
      	return view('frontend.main',compact('knowledges'));
 
+
      }
      public function loginfun($value='')
     {
@@ -34,14 +35,23 @@ class PageController extends Controller
     public function titlefun($value='')
      {
         $titles=Title::all();
-     	return view('frontend.title',compact('titles'));
-     }
-      public function questionfun($value='')
-     {
+        
+
         $questions=Question::all();
-        $answers=Answer::all();
-        return view('frontend.question',compact(
-            'questions','answers'));
+        // $question=Question::find('id');
+
+
+     	return view('frontend.title',compact('titles','questions'));
+     }
+      public function questionfun($id)
+     {
+        //dd($id);
+
+         $title=Title::find($id);
+         //dd($title);
+         $answers=Answer::all();
+       $questions=Question::all();
+        return view('frontend.question',compact('title','questions','answers'));
      }
      
 }

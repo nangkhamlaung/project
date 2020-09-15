@@ -49,7 +49,7 @@ Route::get('login','PageController@loginfun')->name('loginpage');
 Route::get('register','PageController@registerfun')->name('registerpage');
 
 Route::get('title','PageController@titlefun')->name('titlepage');
-Route::get('question','PageController@questionfun')->name('questionpage');
+Route::get('question/{id}','PageController@questionfun')->name('questionpage');
 
 
 

@@ -31,8 +31,6 @@
                     <p>Set have great you male grass yielding an yielding first their you're
                     have called the abundantly fruit were man </p>
                     <a href="#" class="btn_1">Read More</a>
-
-        
                     </div>
 
                 </div>
