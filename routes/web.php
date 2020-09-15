@@ -41,9 +41,3 @@ Route::resource('answers','AnswerController');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
-
-
-
-
-
-

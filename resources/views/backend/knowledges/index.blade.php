@@ -22,7 +22,7 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-12">				
-				<table class="table table-bordered ">
+				<table class="table table-bordered text-center">
 					<thead class="table-dark my-3">
 						<tr>
 							<th scope="col">No</th>
@@ -40,7 +40,7 @@
 						<tr>
 							<td>{{$i++}}</td>
 							<td>{{$knowledge->name}}</td>
-							<td><img src="{{$knowledge->photo}}" width="160px" height="100px" ></td>
+							<td><img src="{{$knowledge->photo}}" class="img-fluid" width="250px"></td>
 							<td>
 								<form method="POST" action="{{route('knowledges.destroy',$knowledge->id)}}" onsubmit="return confirm('Are you sure?')">
 									@csrf

@@ -5,13 +5,13 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-8 col-md-offset-2">
 					@csrf
 					
 					<div class="card" style="width: 40rem;">
-						<img src="{{$knowledge->photo}}" class="card-img-top" alt="...">
+						<img src="{{asset($knowledge->photo)}}" class="card-img-top" alt="...">
 						<div class="card-body">
-							<h5 class="card-title">{{$knowledge->name}}</h5>
+							<h5 class="card-title">{{ $knowledge->name }}</h5>
 							<p class="card-text">{{$knowledge->description}}</p>
 							<a href="{{route('knowledges.index',$knowledge->id)}}" class="btn btn-primary">Back</a>
 						</div>
