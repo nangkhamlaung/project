@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Title;
+use App\Question;
+use App\Answer;
 class PageController extends Controller
 {
     public function mainfun($value='')
@@ -25,8 +27,15 @@ class PageController extends Controller
     }
     public function titlefun($value='')
      {
-     	
-     	return view('frontend.title');
+        $titles=Title::all();
+     	return view('frontend.title',compact('titles'));
+     }
+      public function questionfun($value='')
+     {
+        $questions=Question::all();
+        $answers=Answer::all();
+        return view('frontend.question',compact(
+            'questions','answers'));
      }
      
 }

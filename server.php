@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 84ef2b7ac0835ce364be454e88957c063286cc0b
 <?php
 
 /**
@@ -23,7 +19,3 @@ if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
 }
 
 require_once __DIR__.'/public/index.php';
-<<<<<<< HEAD
-=======
-
->>>>>>> 84ef2b7ac0835ce364be454e88957c063286cc0b

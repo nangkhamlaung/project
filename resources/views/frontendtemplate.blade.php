@@ -32,7 +32,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo1.png')}}" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/1.png')}}" class="img-fluid" alt="logo" width="100px"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +51,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('titlepage')}}">Title</a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" href="cource.html">Courses</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a class="nav-link" href="blog.html">Blog</a>
                                 </li>
@@ -73,7 +73,10 @@
                                     <a class="btn_1" href="#">Get a Quote</a>
                                 </li> --}}
                                 <li class="d-none d-lg-block">
-                                    <a href="{{route('login')}}" class="text-decoration-none loginLink"> Login </a> | <a href="{{route('register')}}" class="text-decoration-none loginLink"> Sign-up </a>
+                                    <a href="{{route('login')}}" class="text-decoration-none loginLink btn_1"> Login </a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                     <a href="{{route('register')}}" class="text-decoration-none loginLink btn_1"> Sign-up </a>
                                 </li>
                                
                             </ul>
