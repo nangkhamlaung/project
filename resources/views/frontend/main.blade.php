@@ -1,8 +1,28 @@
 @extends('frontendtemplate')
 @section('content')
+<!-- banner part start-->
 
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Every child yearns to learn</h5>
+                            <h1>Show Your Ability</h1>
+                            <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
+                            <a href="#" class="btn_1">View Course </a>
+                            <a href="#" class="btn_2">Get Started </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
 <!-- feature_part start-->
 <section class="feature_part">
+<<<<<<< HEAD
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-xl-3 align-self-center">
@@ -11,6 +31,17 @@
                     <p>Set have great you male grass yielding an yielding first their you're
                     have called the abundantly fruit were man </p>
                     <a href="#" class="btn_1">Read More</a>
+=======
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-3 align-self-center">
+                    <div class="single_feature_text ">
+                        <h2>Awesome <br> Feature</h2>
+                        <p>Set have great you male grass yielding an yielding first their you're
+                            have called the abundantly fruit were man </p>
+                        <a href="" class="btn_1">Read More</a>
+                    </div>
+>>>>>>> 9d46e2411de019cbbb94d7ae54026287a28b78f9
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3">

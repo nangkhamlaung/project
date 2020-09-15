@@ -34,7 +34,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo1.png')}}" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/1.png')}}" class="img-fluid" alt="logo" width="100px"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +51,11 @@
                                     <a class="nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="cource.html">Courses</a>
+                                    <a class="nav-link" href="{{route('titlepage')}}">Title</a>
                                 </li>
+                                {{-- <li class="nav-item">
+                                    <a class="nav-link" href="cource.html">Courses</a>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a class="nav-link" href="blog.html">Blog</a>
                                 </li>
@@ -61,16 +64,23 @@
                                         Pages
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        <a class="dropdown-item" href="#">Single blog</a>
                                         <a class="dropdown-item" href="elements.html">Elements</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
-                                <li class="d-none d-lg-block">
+                                {{-- <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
+                                </li> --}}
+                                <li class="d-none d-lg-block">
+                                    <a href="{{route('login')}}" class="text-decoration-none loginLink btn_1"> Login </a>
                                 </li>
+                                <li class="d-none d-lg-block">
+                                     <a href="{{route('register')}}" class="text-decoration-none loginLink btn_1"> Sign-up </a>
+                                </li>
+                               
                             </ul>
                         </div>
                     </nav>
@@ -79,28 +89,10 @@
         </div>
     </header>
     <!-- Header part end-->
-
-    <!-- banner part start-->
-    <section class="banner_part">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-xl-6">
-                    <div class="banner_text">
-                        <div class="banner_text_iner">
-                            <h5>Every child yearns to learn</h5>
-                            <h1>Show Your Ability</h1>
-                            <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
-                            <a href="#" class="btn_1">View Course </a>
-                            <a href="#" class="btn_2">Get Started </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner part start-->
+    
 
 @yield('content')
+
     
 
     <!-- footer part start-->

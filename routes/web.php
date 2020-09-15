@@ -34,6 +34,21 @@ Route::get('dashboard','BackendTemplateController@dashboardfun')->name('dashboar
 //Nang Kham Laung
 Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
+Route::get('login','PageController@loginfun')->name('loginpage');
+
+Route::get('register','PageController@registerfun')->name('registerpage');
+
+Route::get('title','PageController@titlefun')->name('titlepage');
+Route::get('question','PageController@questionfun')->name('questionpage');
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 //Honey Zue
@@ -41,3 +56,17 @@ Route::resource('answers','AnswerController');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+>>>>>>> 9d46e2411de019cbbb94d7ae54026287a28b78f9
