@@ -22,6 +22,16 @@
     <!-- banner part start-->
 <!-- feature_part start-->
 <section class="feature_part">
+<<<<<<< HEAD
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 align-self-center">
+                <div class="single_feature_text ">
+                    <h2>Awesome <br> Feature</h2>
+                    <p>Set have great you male grass yielding an yielding first their you're
+                    have called the abundantly fruit were man </p>
+                    <a href="#" class="btn_1">Read More</a>
+=======
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-xl-3 align-self-center">
@@ -31,71 +41,73 @@
                             have called the abundantly fruit were man </p>
                         <a href="" class="btn_1">Read More</a>
                     </div>
+>>>>>>> 9d46e2411de019cbbb94d7ae54026287a28b78f9
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part">
-                            <span class="single_feature_icon"><i class="ti-layers"></i></span>
-                            <h4>Better Future</h4>
-                            <p>Set have great you male grasses yielding yielding first their to
-                                called deep abundantly Set have great you male</p>
-                        </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class="ti-layers"></i></span>
+                        <h4>Better Future</h4>
+                        <p>Set have great you male grasses yielding yielding first their to
+                        called deep abundantly Set have great you male</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part">
-                            <span class="single_feature_icon"><i class="ti-new-window"></i></span>
-                            <h4>Qualified Trainers</h4>
-                            <p>Set have great you male grasses yielding yielding first their to called
-                                deep abundantly Set have great you male</p>
-                        </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part">
+                        <span class="single_feature_icon"><i class="ti-new-window"></i></span>
+                        <h4>Qualified Trainers</h4>
+                        <p>Set have great you male grasses yielding yielding first their to called
+                        deep abundantly Set have great you male</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part single_feature_part_2">
-                            <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
-                            <h4>Job Oppurtunity</h4>
-                            <p>Set have great you male grasses yielding yielding first their to called deep
-                                abundantly Set have great you male</p>
-                        </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="single_feature">
+                    <div class="single_feature_part single_feature_part_2">
+                        <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
+                        <h4>Job Oppurtunity</h4>
+                        <p>Set have great you male grasses yielding yielding first their to called deep
+                        abundantly Set have great you male</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- upcoming_event part start-->
+    </div>
+</section>
+<!-- upcoming_event part start-->
 
-    <!-- learning part start-->
-    <section class="learning_part">
-        <div class="container">
-            <div class="row align-items-sm-center align-items-lg-stretch">
-                <div class="col-md-7 col-lg-7">
-                    <div class="learning_img">
-                        <img src="{{ asset('frontend/img/learning_img.png')}}" alt="">
-                    </div>
+<!-- learning part start-->
+<section class="learning_part">
+    <div class="container">
+        <div class="row align-items-sm-center align-items-lg-stretch">
+            <div class="col-md-7 col-lg-7">
+                <div class="learning_img">
+                    <img src="{{ asset('frontend/img/learning_img.png')}}" alt="">
                 </div>
-                <div class="col-md-5 col-lg-5">
-                    <div class="learning_member_text">
-                        <h5>About us</h5>
-                        <h2>Making Quiz Purpose </h2>
-                        <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <div class="learning_member_text">
+                    <h5>About us</h5>
+                    <h2>Making Quiz Purpose </h2>
+                    <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
                         {{-- <ul>
                             <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
                                 gathered wear</li>
                             <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
                                 night.</li>
-                        </ul> --}}
-                        <a href="#" class="btn_1">Read More</a>
+                            </ul> --}}
+                            <a href="#" class="btn_1">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- learning part end-->
+        </section>
+        <!-- learning part end-->
 
-    <!-- member_counter counter start -->
+        <!-- member_counter counter start -->
     {{-- <section class="member_counter">
         <div class="container">
             <div class="row">
@@ -244,152 +256,62 @@
             <div class="row align-items-sm-center align-items-xl-stretch">
                 <div class="col-md-6 col-lg-6">
                     <div class="learning_member_text">
-                       {{--  <h5>Advance feature</h5> --}}
-                        <h2>Advantage of IT Quiz</h2>
-                        <p>Quizzes can be given without an instructor. Since the quiz is virtual, employees can take them on their own time without the need of someone acting as a proctor. We can also check our own skill everytime we needs.</p>
+                     {{--  <h5>Advance feature</h5> --}}
+                     <h2>Advantage of IT Quiz</h2>
+                     <p>Quizzes can be given without an instructor. Since the quiz is virtual, employees can take them on their own time without the need of someone acting as a proctor. We can also check our own skill everytime we needs.</p>
 
 
-                        <h2>Disadvantage of IT Quiz</h2>
-                        <p>IT Quiz system is need to access the Internet first we used. So it is difficult for someone who hasn't had the Internet access.</p>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="learning_img">
-                        <img src="{{ asset('frontend/img/advance_feature_img.png')}}" alt="">
-                    </div>
+                     <h2>Disadvantage of IT Quiz</h2>
+                     <p>IT Quiz system is need to access the Internet first we used. So it is difficult for someone who hasn't had the Internet access.</p>
+
+                 </div>
+             </div>
+             <div class="col-lg-6 col-md-6">
+                <div class="learning_img">
+                    <img src="{{ asset('frontend/img/advance_feature_img.png')}}" alt="">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- learning part end-->
+    </div>
+</section>
+<!-- learning part end-->
 
-    <!--::blog_part start::-->
-    <section class="blog_part section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-5">
-                    <div class="section_tittle text-center">
-                        {{-- <p>Our Blog</p> --}}
-                        <h2>Knowledges</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/html.png')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is HTML?</h5>
-                                <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content. HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
-                                <a href="https://www.w3schools.com/html" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/css.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is CSS?</h5>
-                                <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files</p>
-                                <a href="https://www.w3schools.com/css" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/js.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is JavaScript?</h5>
-                                <p>JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.</p>
-                                <a href="https://www.w3schools.com/js" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+<!--::blog_part start::-->
+<section class="blog_part section_padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-5">
+                <div class="section_tittle text-center">
+                    {{-- <p>Our Blog</p> --}}
+                    <h2>Knowledges</h2>
+
                 </div>
 
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/php.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is PHP?</h5>
-                                <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
-                                <a href="https://www.w3schools.com/php" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/jq.png')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is jQuery?</h5>
-                                <p>jQuery is a lightweight, "write less, do more", JavaScript library.The purpose of jQuery is to make it much easier to use JavaScript on your website.jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
-                                <a href="https://www.w3schools.com/jquery" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/sql.png')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                {{-- <a href="#" class="btn_4">Design</a> --}}
-                                
-                                <h5 class="card-title">What is SQL?</h5>
-                                <p>SQL stands for Structured Query Language. SQL lets you access and manipulate databases. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987</p>
-                                <a href="https://www.w3schools.com/sql" class="text-info">Learn more</a>
-                                <ul>
-                                    <li> <span class="ti-comments"></span>2 Comments</li>
-                                    <li> <span class="ti-heart"></span>2k Like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-    <!--::blog_part end::-->
+        <div class="row">
+            @foreach($knowledges as  $knowledge)
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="single-home-blog">
+                    <div class="card">
+                        <img src="{{asset($knowledge->photo)}}" class="card-img-top" alt="blog">
+                        <div class="card-body">
 
- @endsection
+                            <h5 class="card-title">{{$knowledge->name}}</h5>
+                            <p>{{$knowledge->description}}</p>
+                            <a href="https://www.w3schools.com/sql" class="text-info">Learn more</a>
+                            <ul>
+                                <li> <span class="ti-comments"></span>2 Comments</li>
+                                <li> <span class="ti-heart"></span>2k Like</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>  
+    </div>     
+</section>
+<!--::blog_part end::-->
+
+@endsection
