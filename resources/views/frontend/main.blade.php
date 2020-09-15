@@ -22,7 +22,7 @@
     <!-- banner part start-->
 <!-- feature_part start-->
 <section class="feature_part">
-<<<<<<< HEAD
+
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-xl-3 align-self-center">
@@ -31,17 +31,10 @@
                     <p>Set have great you male grass yielding an yielding first their you're
                     have called the abundantly fruit were man </p>
                     <a href="#" class="btn_1">Read More</a>
-=======
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-xl-3 align-self-center">
-                    <div class="single_feature_text ">
-                        <h2>Awesome <br> Feature</h2>
-                        <p>Set have great you male grass yielding an yielding first their you're
-                            have called the abundantly fruit were man </p>
+
                         <a href="" class="btn_1">Read More</a>
                     </div>
->>>>>>> 9d46e2411de019cbbb94d7ae54026287a28b78f9
+                  
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3">
