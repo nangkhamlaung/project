@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 
@@ -7,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Etrain</title>
-    <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}">
+    <title>IT Quizs</title>
+    <link rel="icon" href="{{ asset('frontend/img/logo3.png')}}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css')}}">
     <!-- animate CSS -->
@@ -34,7 +32,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/1.png')}}" class="img-fluid" alt="logo" width="100px"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo3.png')}}" class="img-fluid" alt="logo" width="100px"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -56,30 +54,41 @@
                                 {{-- <li class="nav-item">
                                     <a class="nav-link" href="cource.html">Courses</a>
                                 </li> --}}
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Single blog</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 {{-- <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
                                 </li> --}}
-                                <li class="d-none d-lg-block">
-                                    <a href="{{route('login')}}" class="text-decoration-none loginLink btn_1"> Login </a>
+                                @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
-                                <li class="d-none d-lg-block">
-                                     <a href="{{route('register')}}" class="text-decoration-none loginLink btn_1"> Sign-up </a>
-                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
                                
                             </ul>
                         </div>
@@ -183,6 +192,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="{{ asset('frontend/js/slick.min.js')}}"></script>
     <script src="{{ asset('frontend/js/jquery.counterup.min.js')}}"></script>
     <script src="{{ asset('frontend/js/waypoints.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('front/js/js_script.js')}}"></script>
     <!-- custom js -->
     <script src="{{ asset('frontend/js/custom.js')}}"></script>
 </body>

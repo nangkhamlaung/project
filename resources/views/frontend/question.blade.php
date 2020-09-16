@@ -1,29 +1,44 @@
 @extends('frontendtemplate')
 @section('content')
 <section class="blog_part section_padding">
-<div class="container mt-5">
-<div class="grid">
-    <div id="quiz" class="centered grid__col--8">
-        <h1>Question</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            
+        
+    
+        @foreach($title->questions as $question)
+        <h4>{{$question->name}}</h4>
 
-        <h2 id="question" class="headline-secondary--grouped"></h2>
-        <h3 id="score"></h3>
+        
+         @foreach($question->answers as $answer)
+         
+<!-- Default unchecked -->
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+  <label class="custom-control-label" for="defaultUnchecked">{{$answer->answer1}}</label>
+</div>
 
-        <p id="choice0"></p>
-        <button id="guess0" class="btn--default">Answer1</button>
+<!-- Default checked -->
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+  <label class="custom-control-label" for="defaultChecked">{{$answer->answer2}}</label>
+</div>
+<!-- Default checked -->
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+  <label class="custom-control-label" for="defaultChecked">{{$answer->answer3}}</label>
+</div>
+<!-- Default checked -->
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+  <label class="custom-control-label" for="defaultChecked">{{$answer->answer4}}</label>
+</div>
 
-        <p id="choice1"></p>
-        <button id="guess1" class="btn--default">Answer2</button>
-        <p id="choice2"></p>
-        <button id="guess2" class="btn--default">Answer2</button>
-        <p id="choice3"></p>
-        <button id="guess3" class="btn--default">Answer2</button>
-        <footer>
-            <p id="progress">Question x of y</p>
-            <p>Made with javascript, html5, and css! Plus love. -Jason Chan</p>
-            <a href="http://referrals.trhou.se/jasonchan2">Click Here To learn Code!</a>
-        </footer>
-    </div>
+ @endforeach
+        @endforeach
+        
+</div>
 </div>
 </div>
 </section>

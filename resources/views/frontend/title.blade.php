@@ -13,101 +13,25 @@
                 </div>
             </div>
             <div class="row">
-            	@foreach($titles as $title)
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                	
+                @foreach($titles as $title)
+                <div class="col-sm-6 col-lg-4 col-xl-4 my-3" style="text-align: center;">
+                    
                     <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{$title->photo}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="{{route('questionpage')}}" class="btn_1">Start Quiz</a>
-                                
-                              
-                            </div>
+                        <div class="card mx-3 my-3" >
+                            <img src="{{$title->photo}}" class="card-img-top img-fluid" alt="blog" style="border-radius: 10px; box-shadow: 5px 5px #E4DFDE;">
+                               
                         </div>
+                         <a href="{{route('questionpage',$title->id)}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;" >Start Quiz</a>
                     </div>
                 </div>
                     @endforeach
-                
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/css.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="" class="btn_1">Start Quiz</a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/js.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#" class="btn_1">Start Quiz</a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/php.jpg')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#" class="btn_1">Start Quiz</a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/jq.png')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#" class="btn_1">Start Quiz</a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4 col-xl-4">
-                    <div class="single-home-blog">
-                        <div class="card">
-                            <img src="{{ asset('frontend/img/blog/sql.png')}}" class="card-img-top" alt="blog">
-                            <div class="card-body">
-                                <a href="#" class="btn_1">Start Quiz</a>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+ 
+               </div>
+               </div> 
             </div>
         </div>
+
     </section>
     <!--::blog_part end::-->
 
-
-	
-	
-	
-	
-
-	@endsection
-
-
-
-
-
-
-
+    @endsection
