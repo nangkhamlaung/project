@@ -1,13 +1,9 @@
 @extends('frontendtemplate')
 @section('content')
 
-	
-	
-
-	
 	<!-- Subcategory Title -->
 	<div class="jumbotron jumbotron-fluid subtitle">
-  		<div class="container">
+  		<div class="container mt-5 pt-5 mb-5">
     		<h1 class="text-center text-white"> Login </h1>
   		</div>
 	</div>

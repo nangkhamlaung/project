@@ -16,10 +16,9 @@ class PageController extends Controller
     public function mainfun($value='')
      {
 
-
      	$knowledges=Knowledge::all();
      	return view('frontend.main',compact('knowledges'));
-        
+
      }
      public function loginfun($value='')
     {
@@ -27,6 +26,7 @@ class PageController extends Controller
 
     	return view('frontend.login');
     }
+    
     public function registerfun($value='')
     {
 

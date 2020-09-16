@@ -195,6 +195,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type="text/javascript" src="{{asset('front/js/js_script.js')}}"></script>
     <!-- custom js -->
     <script src="{{ asset('frontend/js/custom.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('frontend/js/localstroage_custom.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js')}}"></script>
 </body>
 
 </html>

@@ -11,8 +11,8 @@
                             <h5>Every child yearns to learn</h5>
                             <h1>Show Your Ability</h1>
                             <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
-                            <a href="#" class="btn_1">View Course </a>
-                            <a href="#" class="btn_2">Get Started </a>
+                            <a href="{{route('titlepage')}}" class="btn_1">Get Started </a>
+                            {{-- <a href="#" class="btn_2">Get Started </a> --}}
                         </div>
                     </div>
                 </div>
