@@ -22,6 +22,7 @@
     <!-- banner part start-->
 
 <!-- learning part start-->
+<section id="about">
 <section class="learning_part">
     <div class="container">
         <div class="row align-items-sm-center align-items-lg-stretch">
@@ -46,6 +47,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </section>
         <!-- learning part end-->
 
