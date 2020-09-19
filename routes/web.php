@@ -58,12 +58,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Honey Zue
 Route::resource('answers','AnswerController');
+Route::post('answer','AnswerController@answer')->name('answer');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
 
 
-
+//Nang Kham Laung
+Route::resource('results','ResultController');
 
 
 
@@ -73,3 +75,6 @@ Route::resource('knowledges','KnowledgeController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('loginform','PageController@loginfun')->name('loginpage');
+
+Route::get('registerform','PageController@registerfun')->name('registerpage');

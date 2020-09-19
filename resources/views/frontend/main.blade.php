@@ -11,8 +11,20 @@
                             <h5>Every child yearns to learn</h5>
                             <h1>Show Your Ability</h1>
                             <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
-                            <a href="#" class="btn_1">View Course </a>
-                            <a href="#" class="btn_2">Get Started </a>
+                            
+                             @role('Customer')
+                                
+                                
+                                <a href="{{route('titlepage')}}" class="btn_1"> Start Quiz</a> 
+                                    
+                                </a>
+                                    @else
+                                    <a href="{{route('register')}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;"> 
+                                      Get Started  
+                                    </a>
+                                
+                                @endrole
+                            {{-- <a href="#" class="btn_2">Get Started </a> --}}
                         </div>
                     </div>
                 </div>
@@ -20,63 +32,7 @@
         </div>
     </section>
     <!-- banner part start-->
-<!-- feature_part start-->
-<section class="feature_part">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-xl-3 align-self-center">
-                <div class="single_feature_text ">
-                    <h2>Awesome <br> Feature</h2>
-                    <p>Set have great you male grass yielding an yielding first their you're
-                    have called the abundantly fruit were man </p>
-                    <a href="#" class="btn_1">Read More</a>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-xl-3 align-self-center">
-                    <div class="single_feature_text ">
-                        <h2>Awesome <br> Feature</h2>
-                        <p>Set have great you male grass yielding an yielding first their you're
-                            have called the abundantly fruit were man </p>
-                        <a href="" class="btn_1">Read More</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-                <div class="single_feature">
-                    <div class="single_feature_part">
-                        <span class="single_feature_icon"><i class="ti-layers"></i></span>
-                        <h4>Better Future</h4>
-                        <p>Set have great you male grasses yielding yielding first their to
-                        called deep abundantly Set have great you male</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-                <div class="single_feature">
-                    <div class="single_feature_part">
-                        <span class="single_feature_icon"><i class="ti-new-window"></i></span>
-                        <h4>Qualified Trainers</h4>
-                        <p>Set have great you male grasses yielding yielding first their to called
-                        deep abundantly Set have great you male</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-3">
-                <div class="single_feature">
-                    <div class="single_feature_part single_feature_part_2">
-                        <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
-                        <h4>Job Oppurtunity</h4>
-                        <p>Set have great you male grasses yielding yielding first their to called deep
-                        abundantly Set have great you male</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- upcoming_event part start-->
 
 <!-- learning part start-->
 <section class="learning_part">
@@ -92,12 +48,7 @@
                     <h5>About us</h5>
                     <h2>Making Quiz Purpose </h2>
                     <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
-                        {{-- <ul>
-                            <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
-                                gathered wear</li>
-                            <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
-                                night.</li>
-                            </ul> --}}
+                        
                             <a href="#" class="btn_1">Read More</a>
                         </div>
                     </div>
@@ -298,11 +249,7 @@
 
                             <h5 class="card-title">{{$knowledge->name}}</h5>
                             <p>{{$knowledge->description}}</p>
-                            <a href="https://www.w3schools.com/sql" class="text-info">Learn more</a>
-                            <ul>
-                                <li> <span class="ti-comments"></span>2 Comments</li>
-                                <li> <span class="ti-heart"></span>2k Like</li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>
