@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 
 @extends('frontendtemplate')
+=======
+@extends('frontendtemplate')
+@section('content')
+
+	<!-- Subcategory Title -->
+	<div class="jumbotron jumbotron-fluid subtitle">
+  		<div class="container mt-5 pt-5 mb-5">
+    		<h1 class="text-center text-white"> Login </h1>
+  		</div>
+	</div>
+	
+	<!-- Content -->
+	<div class="container my-5">
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 
 @section('content')
 <div class="container mt-5 pt-5 mb-5">

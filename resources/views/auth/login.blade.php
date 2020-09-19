@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 @extends('frontendtemplate')
 
 @section('content')
 <div class="container mt-5 pt-5 mb-5">
+<<<<<<< HEAD
     <div class="row justify-content-center mt-5">
+=======
+    <div class="row justify-content-center">
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>

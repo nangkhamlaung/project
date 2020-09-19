@@ -11,6 +11,7 @@
                             <h5>Every child yearns to learn</h5>
                             <h1>Show Your Ability</h1>
                             <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
+<<<<<<< HEAD
                             
                              @role('Customer')
                                 
@@ -24,6 +25,9 @@
                                     </a>
                                 
                                 @endrole
+=======
+                            <a href="{{route('titlepage')}}" class="btn_1">Get Started </a>
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
                             {{-- <a href="#" class="btn_2">Get Started </a> --}}
                         </div>
                     </div>
@@ -32,9 +36,13 @@
         </div>
     </section>
     <!-- banner part start-->
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 
 <!-- learning part start-->
+<section id="about">
 <section class="learning_part">
     <div class="container">
         <div class="row align-items-sm-center align-items-lg-stretch">
@@ -55,150 +63,8 @@
                 </div>
             </div>
         </section>
+        </section>
         <!-- learning part end-->
-
-        <!-- member_counter counter start -->
-    {{-- <section class="member_counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_member_counter">
-                        <span class="counter">1024</span>
-                        <h4>All Teachers</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_member_counter">
-                        <span class="counter">960</span>
-                        <h4> All Students</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_member_counter">
-                        <span class="counter">1020</span>
-                        <h4>Online Students</h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_member_counter">
-                        <span class="counter">820</span>
-                        <h4>Ofline Students</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- member_counter counter end -->
-
-    <!--::review_part start::-->
-    {{-- <section class="special_cource padding_top">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-5">
-                    <div class="section_tittle text-center">
-                        <p>popular courses</p>
-                        <h2>Special Courses</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-lg-4">
-                    <div class="single_special_cource">
-                        <img src="{{ asset('frontend/img/special_cource_1.png')}}" class="special_img" alt="">
-                        <div class="special_cource_text">
-                            <a href="course-details.html" class="btn_4">Web Development</a>
-                            <h4>$130.00</h4>
-                            <a href="course-details.html"><h3>Web Development</h3></a>
-                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
-                            <div class="author_info">
-                                <div class="author_img">
-                                    <img src="{{ asset('frontend/img/author/author_1.png')}}" alt="">
-                                    <div class="author_info_text">
-                                        <p>Conduct by:</p>
-                                        <h5><a href="#">James Well</a></h5>
-                                    </div>
-                                </div>
-                                <div class="author_rating">
-                                    <div class="rating">
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
-                                    </div>
-                                    <p>3.8 Ratings</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="single_special_cource">
-                        <img src="{{ asset('frontend/img/special_cource_2.png')}}" class="special_img" alt="">
-                        <div class="special_cource_text">
-                            <a href="course-details.html" class="btn_4">design</a>
-                            <h4>$160.00</h4>
-                            <a href="course-details.html"> <h3>Web UX/UI Design </h3></a>
-                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
-                            <div class="author_info">
-                                <div class="author_img">
-                                    <img src="{{ asset('frontend/img/author/author_2.png')}}" alt="">
-                                    <div class="author_info_text">
-                                        <p>Conduct by:</p>
-                                        <h5><a href="#">James Well</a></h5>
-                                    </div>
-                                </div>
-                                <div class="author_rating">
-                                    <div class="rating">
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
-                                    </div>
-                                    <p>3.8 Ratings</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="single_special_cource">
-                        <img src="{{ asset('frontend/img/special_cource_3.png')}}" class="special_img" alt="">
-                        <div class="special_cource_text">
-                            <a href="course-details.html" class="btn_4">Wordpress</a>
-                            <h4>$140.00</h4>
-                            <a href="course-details.html">  <h3>Wordpress Development</h3> </a> 
-                            <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
-                            <div class="author_info">
-                                <div class="author_img">
-                                    <img src="{{ asset('frontend/img/author/author_3.png')}}" alt="">
-                                    <div class="author_info_text">
-                                        <p>Conduct by:</p>
-                                        <h5><a href="#">James Well</a></h5>
-                                    </div>
-                                </div>
-                                <div class="author_rating">
-                                    <div class="rating">
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/color_star.svg')}}" alt=""></a>
-                                        <a href="#"><img src="{{ asset('frontend/img/icon/star.svg')}}" alt=""></a>
-                                    </div>
-                                    <p>3.8 Ratings</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!--::blog_part end::-->
 
     <!-- learning part start-->
     <section class="advance_feature learning_part">
@@ -249,7 +115,10 @@
 
                             <h5 class="card-title">{{$knowledge->name}}</h5>
                             <p>{{$knowledge->description}}</p>
+<<<<<<< HEAD
                             
+=======
+>>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
                         </div>
                     </div>
                 </div>
