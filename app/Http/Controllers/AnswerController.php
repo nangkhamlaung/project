@@ -135,5 +135,30 @@ class AnswerController extends Controller
                 $answer->delete();
         return redirect()->route('answers.index');
     }
+
+    public function answer(Request $request)
+    {
+       //dd($request);
+       $myquestions=$request->myquestion;
+       $answerArray=$request->answerArray;
+
+       //dd($myquestions);
+
+       $myanswer=[];
+       
+       foreach ($myquestions as $myquestion) {
+
+          $qid=$myquestion['id'];
+
+          $ans=Answer::where('question_id','=',$qid)->first();
+
+        //  dd($ans);
+         array_push($myanswer, $ans);
+         
+         # code...
+       }
+    return $myanswer;
+    }
+}
 }
  

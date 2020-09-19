@@ -40,7 +40,7 @@ Route::resource('titles','TitleController');
 Route::get('login','PageController@loginfun')->name('loginpage');
 
 
-
+Route::post('answer','AnswerController@answer')->name('answer');
 
 
 
