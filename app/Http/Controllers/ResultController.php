@@ -13,6 +13,7 @@ class ResultController extends Controller
         $this->middleware('role:Admin')->only('index','show');
         $this->middleware('role:Customer')->only('store');
     }
+    // 
     /**
      * Display a listing of the resource.
      *
@@ -54,22 +55,30 @@ class ResultController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->user);
+        //dd($request);
+        $answerArray=$request->answerArray;//arr
        
-        
-       
+       // dd($answerArray);
+        $title=$request->title;
+        dd($title);
         $result=new Result;
         
-        $result->title_id=$request->title;
-        $result->user_id=Auth::id();//auth id(1 =users table)
         
-        $result->total=$total;
+     $result->total=$request->answerArray;
+        $result->user_id=Auth::id();//auth id(1 =users table)
+        $result->title_id=$request->title;
+      
         $result->save();//only saved into order table
 
         //save into order_detail
         
         return 'Successful!';
     }
+
+
+
+
+
 
     /**
      * Display the specified resource.
@@ -79,7 +88,7 @@ class ResultController extends Controller
      */
     public function show(Result $result)
     {
-        //
+       return view('backend.results.show',compact('result'));
     }
 
     /**

@@ -55,11 +55,11 @@
 								<td>{{$result->user->name}}</td>
 								<td>{{$result->title->name}}</td>
 
-								<td>{{$result->total}} MMK</td>
-								{{-- <td><a href="{{route('result.show',$result->id)}}" class="btn btn-info">Detail</a>
+								<td>{{$result->total}}PointS</td>
+								<td><a href="{{route('results.show',$result->id)}}" class="btn btn-info">Detail</a>
 								
 								
-							</td> --}}
+							</td>
 							</tr>
 							@endforeach
 						</tbody>

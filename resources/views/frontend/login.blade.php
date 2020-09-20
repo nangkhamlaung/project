@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-@extends('frontendtemplate')
-=======
 @extends('frontendtemplate')
 @section('content')
 
@@ -14,7 +11,6 @@
 	
 	<!-- Content -->
 	<div class="container my-5">
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 
 @section('content')
 <div class="container mt-5 pt-5 mb-5">

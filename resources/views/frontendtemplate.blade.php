@@ -7,15 +7,16 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
+
     <title>IT Quiz</title>
     <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}">
-=======
-    <title>IT Quizs</title>
+    
     <link rel="icon" href="{{ asset('frontend/img/logo3.png')}}">
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css')}}">
+    <!-- Icon CSS -->
+    <link rel="stylesheet" href="{{ asset('frontend/icon/icofont/fonts/icofont.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('frontend/icon/icofont/fonts/icofont.css')}}">
     <!-- animate CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/animate.css')}}">
     <!-- owl carousel CSS -->
@@ -39,11 +40,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-<<<<<<< HEAD
-                        <a class="navbar-brand" href="/"> <img src="{{ asset('frontend/img/q1.png')}}" class="img-fluid" alt="logo" width="120px"> </a>
-=======
-                        <a class="navbar-brand" href="index.html"> <img src="{{ asset('frontend/img/logo3.png')}}" class="img-fluid" alt="logo" width="100px"> </a>
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
+
+                        <a class="navbar-brand" href="/"> <img src="{{ asset('frontend/img/q2.png')}}" class="img-fluid" alt="logo" width="150px"> </a>
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +53,7 @@
                             id="navbarSupportedContent">
                             <ul class="navbar-nav align-items-center">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="/" >Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About</a>
@@ -66,15 +65,14 @@
                                     <a class="nav-link" href="cource.html">Courses</a>
                                 </li> --}}
                                 
-<<<<<<< HEAD
+
                                 
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.html">Contact</a>
-=======
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" href="#contact">Contact</a>
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
-                                </li>
+
+                                </li> --}}
                                 {{-- <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
                                 </li> --}}
@@ -128,7 +126,7 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
-                        <a href="index.html"> <img src="{{ asset('frontend/img/logo2.png')}}" alt=""> </a>
+                        <a href="index.html"> <img src="{{ asset('frontend/img/q3.png')}}" alt=""> </a>
                         <p>But when shot real her. Chamber her one visite removal six
                             sending himself boys scot exquisite existend an </p>
                         <p>But when shot real her hamber her </p>
@@ -214,12 +212,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type="text/javascript" src="{{asset('frontend/js/jquery.min.js')}}"></script>
     <!-- custom js -->
     <script src="{{ asset('frontend/js/custom.js')}}"></script>
-<<<<<<< HEAD
-    <script type="text/javascript" src="{{asset('frontend/js/js_script.js')}}"></script>
-=======
-    <script type="text/javascript" src="{{ asset('frontend/js/localstroage_custom.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('frontend/js/new_custom.js')}}"></script>
+
     <script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js')}}"></script>
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 </body>
 
 </html>

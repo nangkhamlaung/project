@@ -11,24 +11,21 @@
                             <h5>Every child yearns to learn</h5>
                             <h1>Show Your Ability</h1>
                             <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
-<<<<<<< HEAD
+
                             
                              @role('Customer')
                                 
                                 
                                 <a href="{{route('titlepage')}}" class="btn_1"> Start Quiz</a> 
                                     
-                                </a>
+                                
                                     @else
-                                    <a href="{{route('register')}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;"> 
+                                    <a href="{{route('login')}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;"> 
                                       Get Started  
                                     </a>
                                 
-                                @endrole
-=======
-                            <a href="{{route('titlepage')}}" class="btn_1">Get Started </a>
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
-                            {{-- <a href="#" class="btn_2">Get Started </a> --}}
+                            @endrole
+                            
                         </div>
                     </div>
                 </div>
@@ -36,10 +33,7 @@
         </div>
     </section>
     <!-- banner part start-->
-<<<<<<< HEAD
 
-=======
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
 
 <!-- learning part start-->
 <section id="about">
@@ -115,10 +109,7 @@
 
                             <h5 class="card-title">{{$knowledge->name}}</h5>
                             <p>{{$knowledge->description}}</p>
-<<<<<<< HEAD
-                            
-=======
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
+
                         </div>
                     </div>
                 </div>

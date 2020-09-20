@@ -60,7 +60,7 @@ Route::post('answer','AnswerController@answer')->name('answer');
 Route::resource('knowledges','KnowledgeController');
 
 
-<<<<<<< HEAD
+
 //Nang Kham Laung
 Route::resource('results','ResultController');
 
@@ -68,8 +68,7 @@ Route::resource('results','ResultController');
 
 
 
-=======
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
+
 
 Auth::routes();
 

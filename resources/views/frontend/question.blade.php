@@ -1,124 +1,140 @@
 @extends('frontendtemplate')
 @section('content')
-<<<<<<< HEAD
-<section class="blog_part section_padding mt-5  offset-md-2">
-  <div class="container-fluid">
+<section class="blog_part section_padding">
+  <div class="container col-md-12" id="answer">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
 
-  <div class="row m-5 mt-3">
-<h1>Question 1 to 10</h1>
-    <div class="col-md-6">
-    </div>
-    </div>  
-    {{-- question --}}
-   <div class="row m-5 mt-3">
+        @php 
+        $i=1;
+        $questions=$title->questions->slice(0,10)->shuffle();
+        @endphp
+        @foreach($questions as $question)
 
-    <div class="col-md-6" id="answer">
+        <input type="hidden" name="" value="{{$title->id}}" class="title">
+        <div class="card mb-4" style="box-shadow: 5px 5px #E4DFDE;">
+          <div class="card-header ">
+            <h5>{{$i++}} . {{$question->name}}</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><form method="post">
+         <input type="hidden" name="" value="{{$questions}}" id="myquestion">
+         <div class="row  mb-3"  id="{{$question->id}}">
+          
+          @foreach($question->answers as $row)
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" value="{{$row->answer1}}" name="answer{{$i}}">
+              <label class="form-check-label" for="{{$row->id}}">
+                {{$row->answer1}}
 
-
-      @php 
-      $i=1;
-      $questions=$title->questions->slice(0,10)->shuffle();
-      @endphp
-      @foreach($questions as $question)
-
-
-      <form method="post">
-       <input type="hidden" name="" value="{{$questions}}" id="myquestion">
-      <div class="row mt-3 mb-3"  id="{{$question->id}}">
-        <h5>{{$i++}} . {{$question->name}}</h5>
-        @foreach($question->answers as $row)
-        <div class="col-sm-10" >
-          <div class="form-check">
-            <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" value="{{$row->answer1}}" name="answer{{$i}}">
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" value="{{$row->answer2}}" name="answer{{$i}}">
+              <label class="form-check-label" for="{{$row->id}}">
+               {{$row->answer2}}
+             </label>
+           </div>
+           <div class="form-check disabled">
+            <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" id="" value="{{$row->answer3}}" name="answer{{$i}}">
             <label class="form-check-label" for="{{$row->id}}">
-              {{$row->answer1}}
+              {{$row->answer3}}
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" value="{{$row->answer2}}" name="answer{{$i}}">
+          <div class="form-check disabled">
+            <input class="form-check-input  answer" type="radio" data-question="{{$question->id}}" id="" value="{{$row->answer4}}" name="answer{{$i}}">
             <label class="form-check-label" for="{{$row->id}}">
-             {{$row->answer2}}
-           </label>
-         </div>
-         <div class="form-check disabled">
-          <input class="form-check-input answer" type="radio" data-question="{{$question->id}}" id="" value="{{$row->answer3}}" name="answer{{$i}}">
-          <label class="form-check-label" for="{{$row->id}}">
-            {{$row->answer3}}
-          </label>
+              {{$row->answer4}}
+            </label>
+          </div>
         </div>
-        <div class="form-check disabled">
-          <input class="form-check-input  answer" type="radio" data-question="{{$question->id}}" id="" value="{{$row->answer4}}" name="answer{{$i}}">
-          <label class="form-check-label" for="{{$row->id}}">
-            {{$row->answer4}}
-          </label>
-        </div>
+        @endforeach
       </div>
-      @endforeach
-    </div>
-  </form> 
-  @endforeach
-  <button class="btn btnsend btn-success">Send</button>
+    </form></li>
+            
+          </ul>
+        </div>
+ 
+    @endforeach
+    <div style="text-align: center;" class="mt-3">
+    <button class="btn btnsend btn_1" id="save">Show Record</button>
+  </div>
+
+  </div>
+</div>
 </div>
 
-</div>
-<div class="row m-5 mt-3">
- <div class="col-md-6" id="result" >
-    <table>
-      <thead>
-      <tr>
+<div id="result" >
+  <div class="container col-md-12 col-lg-12 ">
+    <div class="row">
+      <div class="card col-md-6 offset-md-3  " width="100px" >
+        <div class="card-header text-center btn_1 " >
+          <h4>Your Result</h4>
+        </div>
+        <div class="card-body">
+          <table class="table " style="box-shadow: 5px 5px #E4DFDE;"  >
+            <thead>
+              <tr>
+
+                <th scope="col">Title</th>
+                <th scope="col">Point</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td>{{$title->name}}</td>
+                <td class="tit"></td>
+              </tr>
+              <tr>
+
+                <td>All Question</td>
+                <td class="qus"></td>
+              </tr>
+              <tr>
+
+                <td>Your Answer</td>
+                <td class="ans"></td>
+              </tr>
+              <tr>
+
+                <td>Remaing Answer</td>
+                <td class="remain"></td>
+              </tr>
+              <tr>
+
+                <td>Result Marks</td>
+                <td class="result"></td>
+              </tr>
+              <tr>
+
+                <td colspan="2" class="tfoot text-center">No Result</td>
+                
+              </tr>
+
+              
+            </tbody>
+            
+          </table>
+          <div style="text-align: center;">
+            <a href="{{route('questionpage',$title->id)}}" class="btn btn_1 " style="box-shadow: 5px 5px #E4DFDE;">Try Again </a>
+
+            <a class="btn btn_1 save" style="box-shadow: 5px 5px #E4DFDE;">Save Record </a>
+          </div>
+
+        </div>
         
-        <th>Total</th>
-      </tr>
-      </thead>
-      <tbody id="tbody">
-      </tbody>
-    
-</table>
-<div id="result"></div>
-    </div>
-</div>
-</div>
-=======
-<section class="blog_part section_padding">
-  <div class="container-fluid">
-    <div class="row m-3">
-      <div class="col-md-6">
-      <div id="time" style="float: right;"> Timeout!</div>
-      @php $i=1; @endphp
-        @foreach($title->questions->slice(0,10)->shuffle() as $question)
-        <h4 class="mt-2">{{$i++}}.{{$question->name}}</h4>
-
-        @foreach($question->answers as $answer)
-
-        <!-- Default unchecked -->
-        <div class="custom-control custom-radio">
-          <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-          <label class="custom-control-label" for="defaultUnchecked">{{$answer->answer1}}</label>
-        </div>
-
-        <!-- Default checked -->
-        <div class="custom-control custom-radio">
-          <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-          <label class="custom-control-label" for="defaultChecked">{{$answer->answer2}}</label>
-        </div>
-        <!-- Default checked -->
-        <div class="custom-control custom-radio">
-          <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-          <label class="custom-control-label" for="defaultChecked">{{$answer->answer3}}</label>
-        </div>
-        <!-- Default checked -->
-        <div class="custom-control custom-radio">
-          <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-          <label class="custom-control-label" for="defaultChecked">{{$answer->answer4}}</label>
-        </div>
-
-        @endforeach
-        @endforeach
-       
       </div>
     </div>
   </div>
->>>>>>> ff31d1eacac414c8da4bcd9485eefd2371570018
+</div>
 </section>
 @endsection
-<script type="text/javascript" src="{{asset('frontend/js/js_script.js')}}"></script>
+
+
+
+
+
+
+

@@ -17,6 +17,7 @@ class PageController extends Controller
      {
 
      	$knowledges=Knowledge::all();
+       
      	return view('frontend.main',compact('knowledges'));
 
      }

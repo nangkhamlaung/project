@@ -79,30 +79,33 @@ $(document).ready(function(){
                 localStorage.clear();
 
                 var html='';
-
-
-                html+=`<tr>
+                html+=`<tr style="color:green">
                 
+                <th></th>
                 <th>${result}</th>
-
+                <th>/</th>
+                <th>${question.length}</th>
+               
                 </tr>`
 
 
                 
             }
+            $("#score").html(html);
+
             if(result>5){
+                
 
-
-                var ans=confirm("pass");
+                alert(`You got ${result} on this question.`)
 
             }else{
                 var ans=confirm("Fail");
             }
 
-            $("#tbody").html(html);
-
-
             
+
+
+
 
 
 
