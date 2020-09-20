@@ -1,87 +1,119 @@
-function Quiz(questions) {
-    this.score = 0;
-    this.questions = questions;
-    this.currentQuestionIndex = 0;
-}
+$(document).ready(function(){
 
-Quiz.prototype.guess = function(answer) {
-    if(this.getCurrentQuestion().isCorrectAnswer(answer)) {
-        this.score++;
+    $('#result').hide();
+    localStorage.clear();
+
+    $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
-    this.currentQuestionIndex++;
-};
+    });
 
-Quiz.prototype.getCurrentQuestion = function() {
-    return this.questions[this.currentQuestionIndex];
-};
-
-Quiz.prototype.hasEnded = function() {
-    return this.currentQuestionIndex >= this.questions.length;
-};
-function Question(text, choices, answer) {
-    this.text = text;
-    this.choices = choices;
-    this.answer = answer;
-}
-
-Question.prototype.isCorrectAnswer = function (choice) {
-    return this.answer === choice;
-};
-var QuizUI = {
-    displayNext: function () {
-        if (quiz.hasEnded()) {
-            this.displayScore();
-        } else {
-            this.displayQuestion();
-            this.displayChoices();
-            this.displayProgress();
+    $('.answer').click(function(){
+        //alert('ok');
+        var question=$(this).data(question);
+        var answer=$(this).val();
+        var ques=question.question;
+        
+        var checkans={
+            questionid:ques,
+            answer:answer,
         }
-    },
-    displayQuestion: function() {
-        this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
-    },
-    displayChoices: function() {
-        var choices = quiz.getCurrentQuestion().choices;
 
-        for(var i = 0; i < choices.length; i++) {
-            this.populateIdWithHTML("choice" + i, choices[i]);
-            this.guessHandler("guess" + i, choices[i]);
+        var answerString = localStorage.getItem("answers");
+        var answerArray ;
+        
+        if(answerString==null){
+            answerArray=Array();
+        }else{
+            answerArray = JSON.parse(answerString);
         }
-    },
-    displayScore: function() {
-        var gameOverHTML = "<h1>Game Over</h1>";
-        gameOverHTML += "<h2> Your score is: " + quiz.score + "</h2>";
-        this.populateIdWithHTML("quiz", gameOverHTML);
-    },
+        var status=false;
+        $.each(answerArray,function(i,v){
+            if(ques==v.questionid){
+                answerArray.splice(i,1);
+                answerArray.push(checkans);
+                status=true;
+            }
+        })
+        if(status==false){
+                answerArray.push(checkans);
+        }
     
-    populateIdWithHTML: function(id, text) {
-        var element = document.getElementById(id);
-        element.innerHTML = text;
-    },
-    guessHandler: function(id, guess) {
-        var button = document.getElementById(id);
-        button.onclick = function() {
-            quiz.guess(guess);
-            QuizUI.displayNext();
-        }
-    },
+
+        var answerData = JSON.stringify(answerArray);
+        localStorage.setItem('answers',answerData);
+
+    })
+
+
+    $('.btnsend').click(function(){
+
+        $('#answer').hide();
+        $('#result').show();    
+        //alert('ok');
+        var answerString = localStorage.getItem("answers");
+        var answerArray = JSON.parse(answerString);
+
+        var myquestion=JSON.parse($("#myquestion").val());
+        //console.log(myquestion);
+        //console.log(answerArray);
+
+        var result=0;
+        $.post('/answer',{myquestion:myquestion,answerArray:answerArray},function(response){
+            if(response){
+                //console.log(response);
+                var question = response;
+                var questions = question.length;
+                
+                
+                for(var i=0;i<answerArray.length;i++){
+                    //console.log(answerArray[i]["answer"]);
+                    var answers= answerArray.length;
+                    console.log(answers);
+                    var qid=answerArray[i]["questionid"];
+                    var answer=answerArray[i]["answer"];
+                    //var questions = question.lenght;
+                    //console.log(questions);
+                    for(var j=0;j<question.length;j++){
+                        //console.log(question[j]["right_answer"]);
+
+                        var questionid=question[j]["question_id"];
+                        var rightanswer=question[j]["right_answer"];
+                        if(qid==questionid && answer==rightanswer){
+                            //alert('ok');
+                            result+=10;
+                        }
+
+
+                    }
+
+                }
+                
+                var html='';
+                if(result<=30){
+                    html=`<h4>Thank You,Your IT knowledge is poor!</h4>`
+                }else if(result<=80){
+                    html=`<h4>Thank You,Your IT knowledge is Normal!</h4>`
+                }else if(result<=100){
+                    html=`<h4>Thank You,Your IT knowledge is Excellence!</h4>`
+                }
+                console.log(html);
+                
+
+                var remaining = (questions-answers);
+                //console.log(remaining);
+                //console.log(result);
+                $('.tfoot').html(html);
+                $('.result').text(result);
+                $('.qus').text(questions);
+                $('.ans').text(answers);
+                $('.remain').text(remaining);
+                localStorage.clear();
+            }
+      
+        })
     
-    displayProgress: function() {
-        var currentQuestionNumber = quiz.currentQuestionIndex + 1;
-        this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
-    }
-};
-//Create Questions
-var questions = [
-    new Question("Who was the first President of the United States?", [ "George Washington", "Thomas Jefferson", "Thomas Edison", "I don't know" ], "George Washington"),
-    new Question("What is the answer to the Ultimate Question of Life, the Universe, and Everything?", ["Pi","42", "Wah?", "I don't know"], "42"),
-    new Question("Do you love to code?", ["No","Yes", "Hell Yeah", "No"], "Hell Yeah"),
-    new Question("What's the best programming language?", ["Javascript","C#", "Php", "Python"], "Javascript"),
-    new Question("Is Jason Chan Awesome?", ["Yes","No", "Maybe", "He's okay"], "Yes")
-];
+    })
 
-//Create Quiz
-var quiz = new Quiz(questions);
-
-//Display Quiz
-QuizUI.displayNext();
+})

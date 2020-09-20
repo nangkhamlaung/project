@@ -142,6 +142,7 @@ class AnswerController extends Controller
        $myquestions=$request->myquestion;
        $answerArray=$request->answerArray;
 
+
        //dd($myquestions);
 
        $myanswer=[];
@@ -159,6 +160,5 @@ class AnswerController extends Controller
        }
     return $myanswer;
     }
-}
 }
  

@@ -11,7 +11,21 @@
                             <h5>Every child yearns to learn</h5>
                             <h1>Show Your Ability</h1>
                             <p>Following quiz provides Multiple Choice Questions related to many title. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. You can use Next Quiz button to check new set of questions in the quiz.</p>
-                            <a href="{{route('titlepage')}}" class="btn_1">Get Started </a>
+                            
+                            
+                             @role('Customer')
+                                
+                                
+                                <a href="{{route('titlepage')}}" class="btn_1"> Start Quiz</a> 
+                                    
+                                </a>
+                                    @else
+                                    <a href="{{route('register')}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;"> 
+                                      Get Started  
+                                </a>
+                                
+                                @endrole
+
                             {{-- <a href="#" class="btn_2">Get Started </a> --}}
                         </div>
                     </div>
@@ -22,6 +36,7 @@
     <!-- banner part start-->
 
 <!-- learning part start-->
+<section id="about">
 <section class="learning_part">
     <div class="container">
         <div class="row align-items-sm-center align-items-lg-stretch">
@@ -35,17 +50,13 @@
                     <h5>About us</h5>
                     <h2>Making Quiz Purpose </h2>
                     <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
-                        {{-- <ul>
-                            <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
-                                gathered wear</li>
-                            <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
-                                night.</li>
-                            </ul> --}}
+                        
                             <a href="#" class="btn_1">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
         </section>
         <!-- learning part end-->
 
@@ -76,6 +87,7 @@
 <!-- learning part end-->
 
 <!--::blog_part start::-->
+<section id="knowledge">
 <section class="blog_part section_padding">
     <div class="container">
         <div class="row justify-content-center">
@@ -98,6 +110,7 @@
 
                             <h5 class="card-title">{{$knowledge->name}}</h5>
                             <p>{{$knowledge->description}}</p>
+
                         </div>
                     </div>
                 </div>
@@ -105,6 +118,7 @@
             @endforeach
         </div>  
     </div>     
+</section>
 </section>
 <!--::blog_part end::-->
 

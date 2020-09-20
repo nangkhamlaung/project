@@ -14,4 +14,8 @@ class Title extends Model
     {
     	return $this->hasMany('App\Question');
     }
+    public function results($value='')
+    {
+    	return $this->hasMany('App\Result');
+    }
 }

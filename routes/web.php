@@ -54,12 +54,20 @@ Route::get('question/{id}','PageController@questionfun')->name('questionpage');
 
 //Honey Zue
 Route::resource('answers','AnswerController');
+Route::post('answer','AnswerController@answer')->name('answer');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
+Route::get('contact','PageController@contactfun')->name('contactpage');
 
+
+//Nang Kham Laung
+Route::resource('results','ResultController');
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('loginform','PageController@loginfun')->name('loginpage');
+
+Route::get('registerform','PageController@registerfun')->name('registerpage');
