@@ -40,7 +40,7 @@ Route::resource('titles','TitleController');
 Route::get('login','PageController@loginfun')->name('loginpage');
 
 
-
+Route::post('answer','AnswerController@answer')->name('answer');
 
 
 
@@ -58,15 +58,12 @@ Route::post('answer','AnswerController@answer')->name('answer');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
+Route::get('contact','PageController@contactfun')->name('contactpage');
 
 
 
 //Nang Kham Laung
 Route::resource('results','ResultController');
-
-
-
-
 
 
 

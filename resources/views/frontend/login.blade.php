@@ -9,10 +9,11 @@
   		</div>
 	</div>
 	
-	<!-- Content -->
-	<div class="container my-5">
 
-@section('content')
+	<!-- Content -->
+	
+
+
 <div class="container mt-5 pt-5 mb-5">
     <div class="row justify-content-center mt-5">
         <div class="col-md-8">

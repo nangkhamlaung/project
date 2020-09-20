@@ -22,10 +22,10 @@
                                     @else
                                     <a href="{{route('login')}}" class=" btn btn_1" style="box-shadow: 5px 5px #E4DFDE;"> 
                                       Get Started  
-                                    </a>
+                                </a>
                                 
                             @endrole
-                            
+
                         </div>
                     </div>
                 </div>
@@ -87,6 +87,7 @@
 <!-- learning part end-->
 
 <!--::blog_part start::-->
+<section id="knowledge">
 <section class="blog_part section_padding">
     <div class="container">
         <div class="row justify-content-center">
@@ -117,6 +118,7 @@
             @endforeach
         </div>  
     </div>     
+</section>
 </section>
 <!--::blog_part end::-->
 

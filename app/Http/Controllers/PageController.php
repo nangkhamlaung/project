@@ -55,6 +55,12 @@ class PageController extends Controller
        $questions=Question::all();
         return view('frontend.question',compact('title','questions','answers'));
      }
+     public function contactfun($value='')
+    {
+
+
+        return view('frontend.contact');
+    }
      
 }
 

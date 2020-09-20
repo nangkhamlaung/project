@@ -3,15 +3,24 @@
 
 <head>
     <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <title>IT Quiz</title>
     <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}">
     
     <link rel="icon" href="{{ asset('frontend/img/logo3.png')}}">
+
+   {{--  <title>IT Quiz</title>
+    <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}"> --}}
+
+    
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css')}}">
     <!-- Icon CSS -->
@@ -41,7 +50,11 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
 
+
                         <a class="navbar-brand" href="/"> <img src="{{ asset('frontend/img/q2.png')}}" class="img-fluid" alt="logo" width="150px"> </a>
+
+                       
+
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -61,18 +74,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('titlepage')}}">Title</a>
                                 </li>
-                                {{-- <li class="nav-item">
-                                    <a class="nav-link" href="cource.html">Courses</a>
-                                </li> --}}
+
                                 
 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#knowledge">Knowledge</a>
+                                </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                {{-- <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
+                                    <a class="nav-link" href="{{route('contactpage')}}">Contact</a>
 
-                                </li> --}}
+                                </li>
+
                                 {{-- <li class="d-none d-lg-block">
                                     <a class="btn_1" href="#">Get a Quote</a>
                                 </li> --}}
@@ -126,7 +139,10 @@
             <div class="row justify-content-between">
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
+
                         <a href="index.html"> <img src="{{ asset('frontend/img/q3.png')}}" alt=""> </a>
+
+                        
                         <p>But when shot real her. Chamber her one visite removal six
                             sending himself boys scot exquisite existend an </p>
                         <p>But when shot real her hamber her </p>
@@ -162,8 +178,8 @@
                         <h4>Contact us</h4>
                         <div class="contact_info">
                             <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
+                            <p><span> Phone :</span> +95 92-6145-8006</p>
+                            <p><span> Email : </span>nanghoomnoon.apo@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -176,9 +192,9 @@
                     <div class="copyright_part_text text-center">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                <p class="footer-text m-0">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">IT Quiz team</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</p>
                             </div>
                         </div>
                     </div>
@@ -213,9 +229,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- custom js -->
     <script src="{{ asset('frontend/js/custom.js')}}"></script>
 
+
     <script type="text/javascript" src="{{asset('frontend/js/new_custom.js')}}"></script>
 
     <script type="text/javascript" src="{{ asset('frontend/js/jquery.min.js')}}"></script>
+
+    
+
+    
+   
+    
+
+
 </body>
 
 </html>

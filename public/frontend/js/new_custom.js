@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
 	$('#result').hide();
 	localStorage.clear();
 
@@ -153,3 +154,5 @@ $(document).ready(function(){
 				
 
 })
+
+    
