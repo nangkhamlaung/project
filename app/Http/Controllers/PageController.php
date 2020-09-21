@@ -10,6 +10,7 @@ use App\Knowledge;
 use App\Title;
 use App\Question;
 use App\Answer;
+use App\Result;
 
 class PageController extends Controller
 {
@@ -60,6 +61,12 @@ class PageController extends Controller
 
 
         return view('frontend.contact');
+    }
+     public function showresultfun($value='')
+    {
+        $results=Result::all();
+
+        return view('frontend.showresult',compact('results'));
     }
      
 }

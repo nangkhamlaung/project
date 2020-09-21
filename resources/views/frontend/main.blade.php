@@ -51,7 +51,7 @@
                     <h2>Making Quiz Purpose </h2>
                     <p>An online quiz maker is a useful tool for facilitating both kinds of growth. How? Marketers can use quizzes as part of a social media marketing strategy to generate brand awareness or to drive engagement. Organizations also use quizzes to strengthen lessons from onboarding or training. Project management software platforms, like Wrike, create quizzes for customers after product tutorials. As a result they reduced product training time by 70%.</p>
                         
-                            <a href="#" class="btn_1">Read More</a>
+                            {{-- <a href="#" class="btn_1">Read More</a> --}}
                         </div>
                     </div>
                 </div>

@@ -13,10 +13,9 @@
     <title>IT Quiz</title>
     <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}">
     
-    <link rel="icon" href="{{ asset('frontend/img/logo3.png')}}">
+    
 
-   {{--  <title>IT Quiz</title>
-    <link rel="icon" href="{{ asset('frontend/img/favicon.png')}}"> --}}
+  
 
     
 
@@ -71,14 +70,18 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{route('titlepage')}}">Title</a>
-                                </li>
+                               
 
                                 
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="#knowledge">Knowledge</a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{route('titlepage')}}">Title</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('showresultpage')}}">Result</a>
                                 </li>
                                 
                                 <li class="nav-item">

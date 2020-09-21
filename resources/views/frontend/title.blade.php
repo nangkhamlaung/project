@@ -33,7 +33,7 @@
                                 <a  href="{{ route('login') }}" class="btn btn_1">
                                     Please Login
                                 </a>
-                                @endrole
+                        @endrole
                     </div>
                 </div>
                     @endforeach

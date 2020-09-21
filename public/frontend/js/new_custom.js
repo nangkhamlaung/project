@@ -120,37 +120,39 @@ $(document).ready(function(){
 				$('.qus').text(questions);
 				$('.ans').text(answers);
 				$('.remain').text(remaining);
-				//localStorage.clear();
+				localStorage.clear();
 				
 
 				
 
 			}
-		})
-		$('.save').click(function  () {
-			alert('ok');
-			var answerString = localStorage.getItem("answers");
-		var answerArray = JSON.parse(answerString);
-		var title=JSON.parse($('.title').val());
-		var answerArray = JSON.parse(answerString);
-
-		var answers= answerArray.length;
-		console.log(answers);
-
-		console.log(title);
-			$.post('/results',{title:title,answerArray:answerArray},function(response){
-			if(response){
-
-			}
-		}) 
 		})
 		
+		
+		$('.save ').click(function  () {
+			//alert('ok');
+			
+			var title=JSON.parse($('.title').val());
+			console.log(title);
+			var $result = $(this).find('.result');
+			console.log(result);
+			
+
+			$.post('/results',{title:title,result:result},function(response){
+				if(response){
+					
+					localStorage.clear();
+					
+					location.href="/";
+				}
+			}) 
+		})			
+			
 		
 	})
 
 
-				
-				
+
 				
 
 })

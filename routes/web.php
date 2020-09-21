@@ -33,6 +33,8 @@ Route::middleware('role:Admin')->group(function ()
 //Nang Kham Laung
 Route::resource('questions','QuestionController');
 Route::resource('titles','TitleController');
+Route::resource('answers','AnswerController');
+
 });
 
 
@@ -53,17 +55,18 @@ Route::get('question/{id}','PageController@questionfun')->name('questionpage');
 
 
 //Honey Zue
-Route::resource('answers','AnswerController');
 Route::post('answer','AnswerController@answer')->name('answer');
 
 //Nang Haung nwan
 Route::resource('knowledges','KnowledgeController');
 Route::get('contact','PageController@contactfun')->name('contactpage');
+Route::get('showresult','PageController@showresultfun')->name('showresultpage');
 
 
 
 //Nang Kham Laung
 Route::resource('results','ResultController');
+
 
 
 

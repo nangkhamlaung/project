@@ -8,7 +8,7 @@
         <h1 class="h3 mb-0 text-gray-800 d-inline-block">User List</h1>
 
         <form method="get" action="{{route('results.index')}}" class="mt-2">
-          <div class="form-row">
+          {{-- <div class="form-row">
             <div class="col">
               <input type="date" class="form-control" placeholder="Start Date" name="sdate">
             </div>
@@ -18,7 +18,7 @@
             <div class="col">
               <input type="submit" class="btn btn-success" value="Search">
             </div>
-          </div>
+          </div> --}}
         </form>
       </div>
     </div>
@@ -55,7 +55,7 @@
 								<td>{{$result->user->name}}</td>
 								<td>{{$result->title->name}}</td>
 
-								<td>{{$result->total}}PointS</td>
+								<td>{{$result->total}}Points</td>
 								<td><a href="{{route('results.show',$result->id)}}" class="btn btn-info">Detail</a>
 								
 								

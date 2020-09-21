@@ -27,7 +27,7 @@ class ResultController extends Controller
         // if ($request->sdate && $request->edate) {
         //     $orders = Order::whereBetween('orderdate', [new Carbon($date1), new Carbon($date2)])->where('status',0)->get();
         // }else{
-        //     $orders = Order::all();
+        //     $results = Result::all();
         // }
 
     
@@ -56,19 +56,21 @@ class ResultController extends Controller
     public function store(Request $request)
     {
         //dd($request);
-        $answerArray=$request->answerArray;//arr
-       
-       // dd($answerArray);
-        $title=$request->title;
-        dd($title);
-        $result=new Result;
         
+       $title=$request->title;
+       $result=$request->result;
+       // dd($title);
+       //dd($result);
+    
+     
+
         
-     $result->total=$request->answerArray;
-        $result->user_id=Auth::id();//auth id(1 =users table)
-        $result->title_id=$request->title;
+        $results=new Result;
+        $results->user_id=Auth::id();//auth id(1 =users table)
+        $results->title_id=$title;
+        $results->total=$result;
       
-        $result->save();//only saved into order table
+        $results->save();//only saved into order table
 
         //save into order_detail
         
